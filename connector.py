@@ -92,11 +92,11 @@ class MSSQLManager(object):
             self.cursor = self.conn.cursor(as_dict=True)
         elif self.is_autocommit == "true":
             self.conn = pymssql.connect(
-                host='192.168.20.76',
+                host='',
                 port=1433,
                 # database='edoc2v5',
                 user='sa',
-                password='1qaz2WSX',
+                password='',
                 charset='utf8',
                 autocommit=True
             )
